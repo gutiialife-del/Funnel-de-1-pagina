@@ -19,8 +19,8 @@
     /* BARRAS STICKY */
     .bar-urgency{position:fixed;top:0;left:0;width:100%;z-index:200;
       background:linear-gradient(90deg,var(--danger),#f59e0b 60%,var(--accent));
-      color:#0b0d12;text-align:center;padding:10px 0;font-weight:900}
-    .cd-box{min-width:54px;background:#00000033;border-radius:8px;padding:4px 6px;display:inline-block;margin:0 2px}
+      text-align:center;padding:10px 0;font-weight:900}
+    .cd-box{min-width:54px;background:#00000033;border-radius:8px;padding:4px 6px;display:inline-block;margin:0 2px;color:#fff}
     .cd-box .num{color:#fff;font-weight:900;font-size:18px}
 
     header{position:fixed;top:48px;left:0;width:100%;background:rgba(15,17,21,.9);backdrop-filter:blur(8px);border-bottom:1px solid #1f2330;z-index:150}
@@ -33,15 +33,12 @@
     .btn-brand{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0d12}
     .btn-ghost{border:1px solid #2a3040}
     .btn-danger{background:linear-gradient(135deg,#ff8a8a,var(--danger));color:#0b0d12}
-    .btn-ig{
-      background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-      color:#fff !important;
-    }
+    .btn-ig{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff !important}
 
     /* SECCIONES */
-    .section{padding:100px 0 64px} /* padding-top mayor para compensar headers fixed */
-    .headline{font-size:42px;line-height:1.1;margin:10px 0}
-    .ribbon{background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:4px 10px;border-radius:8px;color:#0b0d12}
+    .section{padding:120px 0 64px} /* más espacio arriba para que no tape el título */
+    .headline{font-size:48px;line-height:1.2;margin:10px 0;font-weight:900}
+    .ribbon{background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:4px 10px;border-radius:8px;color:#0b0d12;font-weight:800}
     .kpis{display:flex;gap:12px;margin-top:14px}
     .kpi{flex:1;background:#131828;border:1px solid #23283a;border-radius:14px;padding:12px;text-align:center}
     .kpi .n{font-size:22px;font-weight:800}
@@ -54,8 +51,13 @@
     .price .now{font-size:40px;font-weight:900;color:var(--accent)}
     .price .old{text-decoration:line-through;color:#a1a7bb}
     .countdown{display:flex;gap:12px;align-items:center;justify-content:center;background:#141a28;border:1px solid #23283a;padding:10px;border-radius:12px;margin-top:12px}
+    
+    /* TESTIMONIOS */
     .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .quote{background:#111423;border:1px solid #23283a;border-radius:16px;padding:16px;font-size:15px}
+    .quote{background:#111423;border:1px solid #23283a;border-radius:14px;padding:20px;font-size:15px;display:flex;flex-direction:column;justify-content:space-between}
+    .quote p{font-style:italic;margin:0 0 10px}
+    .quote .author{font-size:14px;color:#9aa3bd;text-align:right}
+
     .footer{border-top:1px solid #20263a;color:#9aa3bd;padding:36px 0;font-size:13px;text-align:center}
 
     /* FAQ */
@@ -73,7 +75,7 @@
   </style>
   <script>
     (function(){
-      const KEY='lp_cd_deadline_v4';
+      const KEY='lp_cd_deadline_v5';
       const now=Date.now();
       let deadline=localStorage.getItem(KEY);
       if(!deadline){ deadline=now + 48*60*60*1000; localStorage.setItem(KEY, deadline); } else { deadline=+deadline; }
@@ -187,9 +189,18 @@
     <section class="section wrap" id="testi">
       <h2>Los resultados son⚡</h2>
       <div class="testi">
-        <div class="quote">“Al tercer día ya tenía mi primera venta.”</div>
-        <div class="quote">“Con un solo VSL entendí cómo cerrar.”</div>
-        <div class="quote">“Pegué el HTML y en horas llegaron DMs.”</div>
+        <div class="quote">
+          <p>“<em>Al tercer día ya tenía mi primera venta.</em>”</p>
+          <div class="author">— Juan Pérez</div>
+        </div>
+        <div class="quote">
+          <p>“<em>Con un solo VSL entendí cómo cerrar.</em>”</p>
+          <div class="author">— María López</div>
+        </div>
+        <div class="quote">
+          <p>“<em>Pegué el HTML y en horas llegaron DMs.</em>”</p>
+          <div class="author">— Carlos Gómez</div>
+        </div>
       </div>
     </section>
 
