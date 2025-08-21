@@ -3,349 +3,171 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Método IA 3×3 | Consigue tu primera venta digital en 14 días</title>
-  <meta name="description" content="Embudo 1‑Página + VSL X5 + Prompts IA 3×3. Página de ventas de alto impacto con urgencia real, prueba social y oferta apilada. Lista para publicar en Vercel." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Consigue tu primera venta digital en 14 días" />
-  <meta property="og:description" content="Embudo 1‑Página + VSL X5 listo para usar. Prompts IA 3×3. Bonos. Garantía." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect fill='%23000' width='128' height='128' rx='24'/%3E%3Cpath fill='%23fff' d='M34 88l22-48h16l22 48h-16l-4-10H54l-4 10H34zm24-22h12l-6-16-6 16z'/%3E%3C/svg%3E"/>
+  <title>Consigue tu primera venta digital en 14 días | Embudo 1-Página + VSL X5</title>
   <style>
-    :root{
-      --bg:#0f1115;--panel:#141824;--panel-2:#0f131e;--muted:#8b92a7;--text:#e9ecf1;--brand:#7c5cff;--brand-2:#5eead4;--accent:#ffe36e;--ok:#22c55e;--danger:#ef4444;--maxw:1120px;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.25);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 70% -100px, rgba(124,92,255,.25), transparent 60%), var(--bg);color:var(--text);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial}
-    a{color:inherit}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;background:rgba(15,17,21,.7);backdrop-filter: blur(8px);border-bottom:1px solid #1f2330;z-index:50}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .logo{display:flex;gap:10px;align-items:center;font-weight:800}
-    .logo-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
-    .nav a{opacity:.9;text-decoration:none;margin-left:18px}
-    .btn{display:inline-block;padding:14px 20px;border-radius:14px;font-weight:800;text-align:center;text-decoration:none;border:1px solid transparent;box-shadow:var(--shadow);cursor:pointer}
-    .btn-brand{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0d12}
-    .btn-ghost{border:1px solid #2a3040}
-    .btn-danger{background:linear-gradient(135deg,#ff8a8a,var(--danger));color:#0b0d12}
-    .section{padding:64px 0}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
-    .headline{font-size:42px;line-height:1.1;margin:10px 0 8px}
-    .sub{color:#cfd5e8;font-size:18px}
-    .badge{display:inline-flex;gap:8px;align-items:center;background:#171b28;border:1px solid #262d3f;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:13px}
-    .hero-card{background:linear-gradient(180deg,#121624,#0f1117);border:1px solid #23283a;border-radius:var(--radius);padding:16px}
-    .ribbon{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0d12;padding:6px 10px;border-radius:10px;font-weight:800}
-    .kpis{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-    .kpi{flex:1 1 160px;background:#131828;border:1px solid #23283a;border-radius:14px;padding:12px;text-align:center}
-    .kpi .n{font-size:22px;font-weight:800}
+    body {margin:0;font-family:sans-serif;background:#0e0f14;color:#fff;}
+    header {background:#111;padding:14px 0;position:sticky;top:0;z-index:10;}
+    .wrap{max-width:1100px;margin:auto;padding:0 16px;}
+    nav a{margin:0 10px;color:#fff;text-decoration:none;font-weight:500;}
+    .bar-top {background:linear-gradient(90deg,#ff5722,#ff9800);color:#000;font-weight:bold;text-align:center;padding:8px;}
+    .count-inline {display:inline-flex;gap:6px;font-size:16px;}
+    .count-box {background:#000;color:#fff;padding:2px 6px;border-radius:4px;}
 
-    .bar-urgency{background:linear-gradient(90deg,var(--danger),#f59e0b 60%,var(--accent));color:#0b0d12;text-align:center;padding:10px 0;font-weight:900}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:60px 0;}
+    .hero h1{font-size:2.5rem;line-height:1.2;}
+    .badge{background:#1e1e2e;color:#0ff;padding:4px 10px;border-radius:12px;font-size:14px;}
+    .kpis{display:flex;gap:16px;margin:20px 0;}
+    .kpi{background:#161823;padding:12px;border-radius:12px;text-align:center;flex:1;}
+    .btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:bold;text-decoration:none;}
+    .btn-brand{background:linear-gradient(90deg,#4facfe,#00f2fe);color:#000;}
+    .btn-ghost{border:1px solid #4facfe;color:#4facfe;}
 
-    .h2{font-size:28px;margin:0 0 14px}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:linear-gradient(180deg,#121624,#0f1117);border:1px solid #23283a;border-radius:var(--radius);padding:16px}
-    .list{margin:10px 0 0;padding-left:18px}
-    .list li{margin:6px 0}
+    section{padding:60px 0;}
+    h2{font-size:2rem;margin-bottom:20px;}
+    .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+    .benefit{background:#161823;padding:20px;border-radius:12px;text-align:center;}
+    .offer-stack{background:#111;padding:20px;border-radius:16px;margin-top:20px;}
 
-    .stack{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
-    .stack-item{display:flex;justify-content:space-between;align-items:center;background:#101524;border:1px solid #262d3f;border-radius:14px;padding:10px 12px;margin:8px 0}
-    .stack-item .val{opacity:.9}
+    .results{background:#161823;padding:40px;border-radius:16px;text-align:center;}
+    .results h2{font-size:2rem;margin-bottom:20px;}
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+    .testimonial{background:#111;padding:20px;border-radius:12px;}
 
-    .pricebox{background:linear-gradient(180deg,#0f131f,#101526);border:1px solid #233049;border-radius:18px;padding:18px}
-    .price{display:flex;align-items:baseline;gap:10px}
-    .price .now{font-size:46px;font-weight:900;color:var(--accent)}
-    .price .old{text-decoration:line-through;color:#a1a7bb}
-
-    .countdown{display:flex;gap:12px;align-items:center;justify-content:center;background:#141a28;border:1px solid #23283a;padding:10px;border-radius:12px}
-    .cd-box{min-width:64px;background:#101524;border:1px solid #252c3f;border-radius:10px;padding:8px;text-align:center}
-    .cd-box .num{font-size:22px;font-weight:800}
-
-    .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .quote{background:#111423;border:1px solid #23283a;border-radius:16px;padding:16px;font-size:15px}
-    .quote strong{display:block;margin-top:10px;color:#c7ceea}
-
-    .how{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .step{background:#101423;border:1px solid #23283a;border-radius:14px;padding:14px}
-
-    .faq{border-top:1px solid #242a3a;margin-top:18px}
-    .faq details{border-bottom:1px solid #242a3a;padding:14px 0}
-    .faq summary{cursor:pointer;font-weight:700}
-
-    .footer{border-top:1px solid #20263a;color:#9aa3bd;padding:36px 0;font-size:13px}
-
-    .cta-stack{display:flex;gap:12px;flex-wrap:wrap}
-    .pill{display:inline-block;border:1px solid #2a3040;border-radius:999px;padding:6px 10px;color:#cfd5e8;font-size:13px}
-    .notice{font-size:12px;color:#a5aec7;margin-top:6px}
-
-    @media (max-width:1000px){
-      .hero{grid-template-columns:1fr}
-      .stack{grid-template-columns:1fr}
-      .cards{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-      .how{grid-template-columns:1fr 1fr}
-    }
-    @media (max-width:600px){
-      .how{grid-template-columns:1fr}
-    }
+    .countdown {display:flex;gap:12px;justify-content:center;margin-top:20px;}
+    .cd-box{background:#000;padding:10px 14px;border-radius:6px;min-width:50px;}
+    .cd-num{font-size:20px;font-weight:bold;}
   </style>
-
   <script>
-    // Urgency bar timer (48h desde primera visita)
+    // Top bar countdown (48h)
     (function(){
-      const KEY='lp_cd_deadline_v2';
-      const now=Date.now();
-      let deadline=localStorage.getItem(KEY);
-      if(!deadline){ deadline=now + 48*60*60*1000; localStorage.setItem(KEY, deadline); } else { deadline=+deadline; }
+      const topKey='lp_top_cd';
+      let deadline=localStorage.getItem(topKey);
+      if(!deadline){deadline=Date.now()+48*60*60*1000;localStorage.setItem(topKey,deadline);}else{deadline=+deadline;}
       function tick(){
+        const t=deadline-Date.now();
+        const el=document.getElementById('top-count');
+        if(t<=0){el.textContent='0d 0h 0m 0s';return}
+        const s=Math.floor(t/1000);
+        const d=Math.floor(s/86400);
+        const h=Math.floor((s%86400)/3600);
+        const m=Math.floor((s%3600)/60);
+        const sec=s%60;
+        el.textContent=`${d}d ${h}h ${m}m ${sec}s`;
+        requestAnimationFrame(tick);
+      }
+      window.addEventListener('DOMContentLoaded',tick);
+    })();
+
+    // Main countdown (48h)
+    (function(){
+      const KEY='lp_cd_deadline';
+      let deadline=localStorage.getItem(KEY);
+      if(!deadline){deadline=Date.now()+48*60*60*1000;localStorage.setItem(KEY,deadline);}else{deadline=+deadline;}
+      function tick(){
+        const t=deadline-Date.now();
         const elD=document.querySelector('#cd-days');
         const elH=document.querySelector('#cd-hours');
         const elM=document.querySelector('#cd-mins');
         const elS=document.querySelector('#cd-secs');
-        if(!(elD&&elH&&elM&&elS)) return;
-        const t=+deadline - Date.now();
-        if(t<=0){ elD.textContent='0';elH.textContent='0';elM.textContent='0';elS.textContent='0'; return; }
+        if(t<=0){elD.textContent='0';elH.textContent='0';elM.textContent='0';elS.textContent='0';return}
         const s=Math.floor(t/1000);
-        const days=Math.floor(s/86400);
-        const hours=Math.floor((s%86400)/3600);
-        const mins=Math.floor((s%3600)/60);
-        const secs=s%60;
-        elD.textContent=days; elH.textContent=hours; elM.textContent=mins; elS.textContent=secs;
+        elD.textContent=Math.floor(s/86400);
+        elH.textContent=Math.floor((s%86400)/3600);
+        elM.textContent=Math.floor((s%3600)/60);
+        elS.textContent=s%60;
         requestAnimationFrame(tick);
       }
-      window.addEventListener('DOMContentLoaded', tick);
+      window.addEventListener('DOMContentLoaded',tick);
     })();
-
-    // Smooth scroll
-    document.addEventListener('click', (e)=>{
-      const a=e.target.closest('a[data-scroll]');
-      if(!a) return;
-      e.preventDefault();
-      const id=a.getAttribute('href');
-      const el=document.querySelector(id);
-      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
-    });
   </script>
 </head>
 <body>
-  <!-- URGENCY BAR (siempre visible arriba) -->
-  <div class="bar-urgency">
-    🔥 Oferta activa por: 
-    <span class="cd-box"><span class="num" id="cd-days">0</span>d</span>
-    <span class="cd-box"><span class="num" id="cd-hours">0</span>h</span>
-    <span class="cd-box"><span class="num" id="cd-mins">0</span>m</span>
-    <span class="cd-box"><span class="num" id="cd-secs">0</span>s</span>
-  </div>
-
+  <div class="bar-top">🔥 Oferta activa por: <span id="top-count"></span></div>
   <header>
-    <div class="wrap nav">
-      <div class="logo"><span class="logo-dot"></span> Método IA 3×3</div>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;">
+      <div>⚡ Método IA 3×3</div>
       <nav>
-        <a data-scroll href="#metodo">Método</a>
-        <a data-scroll href="#beneficios">Beneficios</a>
-        <a data-scroll href="#stack">Qué incluye</a>
-        <a data-scroll href="#testi">Prueba Social</a>
-        <a class="btn btn-ghost" data-scroll href="#comprar">Comprar</a>
+        <a href="#metodo">Método</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#oferta">Qué incluye</a>
+        <a href="#resultados">Los resultados son⚡</a>
+        <a class="btn btn-ghost" href="#comprar">Comprar</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO estilo "impacto" -->
-    <section class="section wrap hero" id="inicio">
+  <main class="wrap">
+    <section class="hero">
       <div>
-        <span class="badge">Embudo 1‑Página · Guion VSL X5 · Prompts IA 3×3</span>
-        <h1 class="headline">Consigue tu <span class="ribbon">primera venta digital</span> en 14 días con una sola página + guion listo</h1>
-        <p class="sub">Es la ruta más simple para vender sin anuncios: instala una página, usa un guion probado y aplica un checklist diario. Diseñado para el nicho del dinero.</p>
+        <span class="badge">Embudo 1-Página · Guion VSL X5 · Prompts IA 3×3</span>
+        <h1>Consigue tu <span style="background:linear-gradient(90deg,#4facfe,#00f2fe);color:#000;padding:0 6px;border-radius:6px;">primera venta digital</span> en 14 días con una sola página + guion listo</h1>
+        <p>La vía más simple para vender sin anuncios: instala una página, usa un guion probado y aplica un checklist diario. Diseñado para el nicho del dinero.</p>
         <div class="kpis">
           <div class="kpi"><div class="n">1 página</div><div>instalación express</div></div>
           <div class="kpi"><div class="n">5 guiones</div><div>VSL listos</div></div>
           <div class="kpi"><div class="n">14 días</div><div>plan exacto</div></div>
         </div>
-        <div class="cta-stack" style="margin-top:18px">
-          <a class="btn btn-brand" data-scroll href="#comprar">Quiero mi primera venta ahora</a>
-          <a class="btn btn-ghost" href="https://instagram.com/rentabilidadigital2026" target="_blank" rel="nofollow noopener">Hablar por Instagram</a>
-        </div>
-        <div class="notice">Bono de revisión de página disponible para los primeros 30 compradores.</div>
+        <a class="btn btn-brand" href="#comprar">Quiero mi primera venta ahora</a>
+        <a class="btn btn-ghost" href="https://instagram.com/rentabilidadigital2026" target="_blank">Hablar por Instagram</a>
       </div>
       <div>
-        <div class="hero-card">
-          <h3>Demostración</h3>
-          <div class="video" style="background:#0e1016;border:1px dashed #2b3246;border-radius:12px;padding:10px">
-            <!-- Reemplaza el src por tu video (YouTube no listado / Loom) -->
-            <iframe style="width:100%;aspect-ratio:16/9;border:0;border-radius:12px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demostración Embudo 1‑Página" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <ul class="list"><li>Estructura: Quebrar patrón → Conexión → Problema → Solución → Oferta</li><li>Duración ideal: 5–7 minutos</li><li>CTA + escasez real</li></ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROBLEMA → SOLUCIÓN (sección narrativa, estilo recuadros) -->
-    <section class="section wrap" id="metodo">
-      <div class="grid-2">
-        <div class="card">
-          <h2 class="h2">Si te pierdes entre herramientas y anuncios…</h2>
-          <p>La mayoría complica el proceso con embudos enormes, automatizaciones y gasto en tráfico. Resultado: cero enfoque y cero ventas.</p>
-          <p><strong>La alternativa:</strong> una sola página con palabras que venden + un guion simple que cualquiera puede seguir.</p>
-        </div>
-        <div class="card">
-          <h2 class="h2">Lo que vamos a hacer</h2>
-          <ol class="list">
-            <li>Publicas esta <strong>página 1‑página</strong> en Vercel.</li>
-            <li>Grabas/pegas el <strong>VSL X5</strong> (hay guiones).</li>
-            <li>Publicas contenido orgánico en IG y llevas a DM / checkout.</li>
-          </ol>
-          <p class="pill">No necesitas anuncios ni software de pago.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFICIOS visuales (tarjetas) -->
-    <section class="section wrap" id="beneficios">
-      <h2 class="h2">Beneficios concretos</h2>
-      <div class="cards">
-        <div class="card"><h3>Instalación express</h3><p>Pega el HTML, cambia textos y enlaces. Listo en minutos.</p></div>
-        <div class="card"><h3>Guion que cierra</h3><p>VSL X5 con ángulos de persuasión para el nicho del dinero.</p></div>
-        <div class="card"><h3>IA que redacta por ti</h3><p>Prompts 3×3 para titulares, bullets, objeciones y CTA.</p></div>
-      </div>
-    </section>
-
-    <!-- CÓMO FUNCIONA (pasos 1-2-3-4) -->
-    <section class="section wrap">
-      <h2 class="h2">Cómo funciona (hoy mismo)</h2>
-      <div class="how">
-        <div class="step"><strong>1)</strong> Descargas y publicas en Vercel.</div>
-        <div class="step"><strong>2)</strong> Personalizas textos y tu @ de Instagram.</div>
-        <div class="step"><strong>3)</strong> Grabas o pegas el VSL X5.</div>
-        <div class="step"><strong>4)</strong> Envías tráfico orgánico desde IG y cierras por DM/checkout.</div>
-      </div>
-    </section>
-
-    <!-- STACK (oferta apilada) + PRECIO a la derecha -->
-    <section class="section wrap stack" id="stack">
-      <div>
-        <h2 class="h2">Todo lo que recibes hoy</h2>
-        <div class="stack-item"><div>Plantilla <strong>HTML 1‑Página</strong> lista para pegar</div><div class="val">$49</div></div>
-        <div class="stack-item"><div><strong>Guion VSL X5</strong> (5 ángulos de persuasión)</div><div class="val">$97</div></div>
-        <div class="stack-item"><div><strong>Prompts IA 3×3</strong> (titulares, bullets, CTA)</div><div class="val">$67</div></div>
-        <div class="stack-item"><div><strong>Checklist 14 días</strong> paso a paso</div><div class="val">$29</div></div>
-        <div class="stack-item"><div>Bonos: <strong>10 portadas</strong> + <strong>Objeciones</strong> + <strong>Revisión</strong></div><div class="val">$79</div></div>
-        <div class="pill">Valor total: <strong>$321</strong></div>
-      </div>
-      <div>
-        <div class="pricebox">
-          <h2 class="h2">Acceso inmediato</h2>
-          <div class="price"><div class="old">$49</div><div class="now">$9</div><div>/ pago único</div></div>
-          <div class="cta-stack" style="margin-top:14px">
-            <a class="btn btn-brand" href="#" target="_blank" rel="nofollow noopener">Comprar ahora</a>
-            <a class="btn btn-ghost" href="https://instagram.com/rentabilidadigital2026" target="_blank" rel="nofollow noopener">Pedir info por Instagram</a>
-          </div>
-          <div class="notice">Acceso al instante. Te envío el paquete e instrucciones por DM.</div>
-          <div class="countdown" style="margin-top:12px">
-            <span class="pill">Cierra en</span>
-            <div class="cd-box"><div class="num" id="cd-days">0</div><div class="muted">días</div></div>
-            <div class="cd-box"><div class="num" id="cd-hours">0</div><div class="muted">horas</div></div>
-            <div class="cd-box"><div class="num" id="cd-mins">0</div><div class="muted">min</div></div>
-            <div class="cd-box"><div class="num" id="cd-secs">0</div><div class="muted">seg</div></div>
-          </div>
-          <p class="pill" style="margin-top:10px">Garantía: si aplicas 14 días y no avanzas, te doy acceso a mi siguiente taller.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRUEBA SOCIAL / TESTIMONIOS -->
-    <section class="section wrap" id="testi">
-      <h2 class="h2">Resultados reales</h2>
-      <div class="testi">
-        <div class="quote">“Al tercer día ya tenía mi primera venta. El guion hace el trabajo y la página guía todo.”<strong>— A. Romero</strong></div>
-        <div class="quote">“Probé embudos complejos. Con uno solo y este VSL por fin entendí cómo cerrar.”<strong>— L. Álvarez</strong></div>
-        <div class="quote">“Pegué el HTML, lo subí a Vercel, y los DMs empezaron en horas.”<strong>— M. Torres</strong></div>
-      </div>
-    </section>
-
-    <!-- GARANTÍA VISUAL + CTA REDUNDANTE -->
-    <section class="section wrap">
-      <div class="pricebox">
-        <h2 class="h2">Garantía simple</h2>
-        <p>Aplica el checklist durante 14 días. Si no ves progreso, escríbeme y te doy acceso gratuito a mi siguiente taller. Sin preguntas.</p>
-        <div class="cta-stack" style="margin-top:10px">
-          <a class="btn btn-brand" data-scroll href="#comprar">Quiero entrar ahora</a>
-          <a class="btn" href="https://instagram.com/rentabilidadigital2026" target="_blank" rel="nofollow noopener">DM: @rentabilidadigital2026</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOQUE FINAL DE COMPRA (sección separada, estilo "caja" como en la página referente) -->
-    <section class="section wrap" id="comprar">
-      <div class="pricebox">
-        <h2 class="h2">Embudo 1‑Página + VSL X5 + Prompts IA 3×3</h2>
-        <ul class="list">
-          <li>HTML 1‑página listo para publicar</li>
-          <li>Guion VSL X5 (5 ángulos listos)</li>
-          <li>Prompts 3×3 (titulares, bullets, CTA)</li>
-          <li>Checklist 14 días paso a paso</li>
-          <li>Bonos: 10 portadas, Objeciones, Revisión</li>
+        <h3>Demostración</h3>
+        <iframe width="100%" height="230" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <ul>
+          <li>Estructura: Quebrar patrón → Conexión → Problema → Solución → Oferta</li>
+          <li>Duración ideal: 5–7 minutos</li>
+          <li>CTA + escasez real</li>
         </ul>
-        <div class="price" style="margin:14px 0">
-          <div class="old">$49</div>
-          <div class="now">$9</div>
-          <div>/ pago único</div>
-        </div>
-        <div class="cta-stack">
-          <!-- Reemplaza # por tu link de pago o checkout -->
-          <a class="btn btn-danger" href="#" target="_blank" rel="nofollow noopener">Comprar ahora por $9</a>
-          <a class="btn btn-ghost" href="https://instagram.com/rentabilidadigital2026" target="_blank" rel="nofollow noopener">Pedir más info por Instagram</a>
-        </div>
-        <p class="notice">Cupón activado por tiempo limitado. La oferta puede cerrar sin aviso.</p>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section wrap faq" id="faq">
-      <h2 class="h2">Preguntas frecuentes</h2>
-      <details open>
-        <summary>¿Necesito anuncios para vender?</summary>
-        <div>No. Está pensado para tráfico orgánico de Instagram (posts, stories y DMs).</div>
-      </details>
-      <details>
-        <summary>¿Qué tan técnica es la instalación?</summary>
-        <div>Pegas este HTML, cambias textos y enlaces. Puedes alojarlo gratis en Vercel, GitHub Pages o Netlify.</div>
-      </details>
-      <details>
-        <summary>¿Cuánto dura el VSL?</summary>
-        <div>Entre 5 y 7 minutos. Estructura: quebrar patrón → conexión → problema → solución → oferta.</div>
-      </details>
-      <details>
-        <summary>¿Qué pasa si no vendo en 14 días?</summary>
-        <div>Activa la garantía simple: te doy acceso gratuito a mi siguiente taller.</div>
-      </details>
+    <section id="beneficios">
+      <h2>Beneficios clave</h2>
+      <div class="benefits-grid">
+        <div class="benefit">Evita la confusión con múltiples herramientas</div>
+        <div class="benefit">Vende sin anuncios pagados</div>
+        <div class="benefit">Aplica un plan simple y probado</div>
+      </div>
+    </section>
+
+    <section id="oferta">
+      <h2>Todo lo que recibes hoy</h2>
+      <div class="offer-stack">
+        <p><strong>Embudo 1-Página + VSL X5</strong></p>
+        <ul>
+          <li>HTML listo para publicar</li>
+          <li>5 guiones VSL (ángulos de persuasión)</li>
+          <li>Prompts IA 3×3 (titulares, bullets, CTA)</li>
+          <li>Checklist 14 días paso a paso</li>
+          <li>Bonos: portadas, objeciones, revisión</li>
+        </ul>
+      </div>
+      <div class="countdown">
+        <div class="cd-box"><div class="cd-num" id="cd-days">0</div>d</div>
+        <div class="cd-box"><div class="cd-num" id="cd-hours">0</div>h</div>
+        <div class="cd-box"><div class="cd-num" id="cd-mins">0</div>m</div>
+        <div class="cd-box"><div class="cd-num" id="cd-secs">0</div>s</div>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <div class="results">
+        <h2>Los resultados son⚡</h2>
+        <div class="testimonials">
+          <div class="testimonial">“Pasé de cero ventas a mi primera comisión en 7 días.”</div>
+          <div class="testimonial">“El método me permitió vender sin anuncios, solo con Instagram.”</div>
+          <div class="testimonial">“Todo está listo para copiar-pegar, increíblemente simple.”</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comprar">
+      <h2>Accede ahora</h2>
+      <p>Precio especial lanzamiento:</p>
+      <p><del>$49</del> <strong>$9</strong> / pago único</p>
+      <a class="btn btn-brand" href="#" target="_blank">Comprar ahora</a>
+      <a class="btn btn-ghost" href="https://instagram.com/rentabilidadigital2026" target="_blank">Pedir más info por Instagram</a>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="wrap" style="display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap">
-      <div>© <span id="year"></span> Método IA 3×3 · Todos los derechos reservados</div>
-      <div style="display:flex;gap:12px">
-        <a href="#">Términos</a>
-        <a href="#">Privacidad</a>
-        <a href="#inicio" data-scroll>Volver arriba</a>
-      </div>
-    </div>
-    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-  </footer>
-
-  <!-- JSON-LD Producto (básico) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Embudo 1‑Página + VSL X5",
-    "description": "Plantilla HTML 1‑página, guion VSL X5, prompts IA 3×3 y checklist de 14 días.",
-    "brand": {"@type":"Brand","name":"Método IA 3×3"},
-    "offers": {"@type":"Offer","priceCurrency":"USD","price":"9","availability":"https://schema.org/InStock"}
-  }
-  </script>
 </body>
 </html>
-
