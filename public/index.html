@@ -1,203 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Método IA 3×3 | Consigue tu primera venta digital en 14 días</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Método IA 3×3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0f1115;--panel:#141824;--panel-2:#0f131e;--muted:#8b92a7;--text:#e9ecf1;
-      --brand:#7c5cff;--brand-2:#5eead4;--accent:#ffe36e;--danger:#ef4444;
-      --maxw:1120px;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.25);
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
     }
-    body{margin:0;padding:0;background:var(--bg);color:var(--text);font:400 16px/1.6 system-ui}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-    header{position:sticky;top:64px;background:rgba(15,17,21,.7);backdrop-filter: blur(8px);border-bottom:1px solid #1f2330;z-index:40}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .logo{font-weight:800}
-    .nav a{text-decoration:none;margin-left:18px;color:inherit}
-    .btn{display:inline-block;padding:14px 20px;border-radius:14px;font-weight:800;text-align:center;text-decoration:none;cursor:pointer}
-    .btn-brand{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0d12}
-    .btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white}
-    .section{padding:64px 0}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
-    .headline{font-size:42px;line-height:1.1;margin:10px 0 8px;color:var(--text)}
-    .sub{color:#cfd5e8;font-size:18px}
-    .kpis{display:flex;gap:12px;margin-top:14px}
-    .kpi{flex:1;background:#131828;border:1px solid #23283a;border-radius:14px;padding:12px;text-align:center}
-    .kpi .n{font-size:22px;font-weight:800}
-
-    /* 🔥 Urgency bar */
-    .bar-urgency{position:sticky;top:0;z-index:50;
-      background:linear-gradient(90deg,var(--danger),#f59e0b 60%,var(--accent));
-      color:#0b0d12;text-align:center;padding:14px 0;font-weight:900;
-      font-size:24px;display:flex;justify-content:center;gap:10px;align-items:center}
-    .cd-box{min-width:74px;background:#101524;border:1px solid #252c3f;border-radius:12px;
-      padding:10px;text-align:center;color:#fff;font-weight:800;font-size:24px}
-
-    /* Beneficios */
-    .beneficios-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
-    .beneficio{background:#121624;border:1px solid #23283a;border-radius:16px;padding:20px;display:flex;gap:14px;align-items:flex-start}
-    .beneficio span.icon{font-size:28px;line-height:1}
-    .beneficio h3{margin:0 0 6px;font-size:20px;color:var(--brand-2)}
-    .beneficio p{margin:0;color:#cfd5e8;font-size:15px}
-
-    /* Testimonios */
-    .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:24px}
-    .testi{background:#121624;border:1px solid #23283a;border-radius:16px;padding:20px;font-style:italic}
-    .testi small{display:block;margin-top:10px;font-style:normal;color:var(--muted)}
-
-    /* Oferta final */
-    .offer{background:#121624;border:1px solid #23283a;border-radius:20px;padding:40px;text-align:center;margin:60px auto}
-    .offer img{max-width:280px;margin-bottom:20px}
-    .offer h2{font-size:28px;margin-bottom:20px}
-    .offer ul{list-style:none;padding:0;margin:20px auto;text-align:left;max-width:520px}
-    .offer ul li{margin:10px 0;padding-left:28px;position:relative;color:#cfd5e8;font-size:16px}
-    .offer ul li::before{content:"✔";position:absolute;left:0;color:var(--brand-2);font-weight:800}
-    .offer .price{font-size:48px;font-weight:900;color:var(--brand-2);margin:20px 0}
-    .offer .btn-cta{background:linear-gradient(135deg,var(--brand-2),var(--brand));color:#0b0d12;font-size:20px;padding:18px 28px}
-
-    /* FAQ */
-    .faq-item{background:#121624;border:1px solid #23283a;border-radius:14px;margin-bottom:12px;padding:16px}
-    .faq-item h3{margin:0 0 6px;font-size:18px;color:var(--brand)}
-    .faq-item p{margin:0;color:#cfd5e8;font-size:15px}
-
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .beneficios-grid{grid-template-columns:1fr}
+    .countdown-box {
+      background: #000;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border: 2px solid #111;
+    }
+    .faq-item {
+      border-bottom: 1px solid #333;
+      padding: 1rem 0;
     }
   </style>
 </head>
-<body>
-  <!-- 🔥 Barra de urgencia -->
-  <div class="bar-urgency">
-    🔥 Oferta activa por:
-    <span class="cd-box"><span id="cd-days">0</span>d</span>
-    <span class="cd-box"><span id="cd-hours">0</span>h</span>
-    <span class="cd-box"><span id="cd-mins">0</span>m</span>
-    <span class="cd-box"><span id="cd-secs">0</span>s</span>
+<body class="bg-black text-white">
+
+  <!-- Barra Urgencia -->
+  <div class="sticky top-0 z-50">
+    <div class="bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-bold text-xl flex items-center justify-center space-x-4 py-3 border-b-4 border-black">
+      <span class="text-2xl">🔥 Oferta activa por:</span>
+      <div id="days" class="countdown-box">0d</div>
+      <div id="hours" class="countdown-box">0h</div>
+      <div id="minutes" class="countdown-box">0m</div>
+      <div id="seconds" class="countdown-box">0s</div>
+    </div>
   </div>
 
-  <!-- HEADER -->
-  <header>
-    <div class="wrap nav">
-      <div class="logo">Método IA 3×3</div>
-      <nav>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#stack">Qué incluye</a>
-        <a href="#testi">Prueba Social</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn" href="#comprar">Comprar</a>
-      </nav>
+  <!-- Navbar -->
+  <nav class="sticky top-[64px] z-40 bg-black bg-opacity-90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+      <h1 class="font-extrabold text-xl">Método IA 3×3</h1>
+      <div class="space-x-8 font-semibold text-gray-300">
+        <a href="#metodo" class="hover:text-white">Método</a>
+        <a href="#beneficios" class="hover:text-white">Beneficios</a>
+        <a href="#incluye" class="hover:text-white">Qué incluye</a>
+        <a href="#testimonios" class="hover:text-white">Prueba Social</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="#oferta-final" class="bg-white text-black px-4 py-2 rounded-lg font-bold hover:bg-gray-200">Comprar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+    <h2 class="text-5xl font-extrabold mb-6 leading-tight">Consigue tu <span class="bg-gradient-to-r from-blue-400 to-cyan-400 text-black px-2 rounded">primera venta digital</span> en 14 días</h2>
+    <p class="text-lg text-gray-300 mb-8">Instala una página, usa un guion probado y aplica un checklist diario. Diseñado para el nicho del dinero.</p>
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <div class="bg-gray-800 px-6 py-3 rounded-xl">1 página<br><span class="text-gray-400">instalación express</span></div>
+      <div class="bg-gray-800 px-6 py-3 rounded-xl">5 guiones<br><span class="text-gray-400">VSL listos</span></div>
+      <div class="bg-gray-800 px-6 py-3 rounded-xl">14 días<br><span class="text-gray-400">plan exacto</span></div>
+    </div>
+    <div class="flex justify-center gap-4">
+      <a href="#oferta-final" class="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-6 py-3 rounded-xl font-bold hover:opacity-90">Quiero mi primera venta ahora</a>
+      <a href="https://instagram.com/rentabilidadigital2026" target="_blank" class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:opacity-90">Hablar por Instagram</a>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="section wrap hero">
-      <div>
-        <h1 class="headline">Consigue tu <span style="color:var(--brand-2)">primera venta digital</span> en 14 días</h1>
-        <p class="sub">Instala una página, usa un guion probado y aplica un checklist diario. Diseñado para el nicho del dinero.</p>
-        <div class="kpis">
-          <div class="kpi"><div class="n">1 página</div><div>instalación express</div></div>
-          <div class="kpi"><div class="n">5 guiones</div><div>VSL listos</div></div>
-          <div class="kpi"><div class="n">14 días</div><div>plan exacto</div></div>
+  <!-- Beneficios -->
+  <section id="beneficios" class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Beneficios concretos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="flex items-start space-x-4">
+          <div class="text-4xl">💎</div>
+          <div><h3 class="text-xl font-bold">La mina de oro</h3><p class="text-gray-300">Descubre si un producto tiene demanda real con una herramienta gratuita y sencilla de usar.</p></div>
         </div>
-        <div style="margin-top:18px">
-          <a class="btn btn-brand" href="#comprar">Quiero mi primera venta ahora</a>
-          <a class="btn btn-ig" href="https://instagram.com/rentabilidadigital2026" target="_blank">Hablar por Instagram</a>
+        <div class="flex items-start space-x-4">
+          <div class="text-4xl">📜</div>
+          <div><h3 class="text-xl font-bold">Formatos secretos</h3><p class="text-gray-300">Aprende los formatos de infoproductos que generan comisiones rápidas y que pocos conocen.</p></div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="text-4xl">♻️</div>
+          <div><h3 class="text-xl font-bold">La estrategia monótona</h3><p class="text-gray-300">Un método repetitivo pero efectivo para generar ingresos diarios sin anuncios ni seguidores.</p></div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="text-4xl">🚀</div>
+          <div><h3 class="text-xl font-bold">Seguidores ardientes</h3><p class="text-gray-300">Consigue seguidores listos para comprar, sin gastar en publicidad ni mostrar tu imagen.</p></div>
         </div>
       </div>
-      <div>
-        <div style="background:#0e1016;border:1px dashed #2b3246;border-radius:12px;padding:10px">
-          <iframe style="width:100%;aspect-ratio:16/9;border:0;border-radius:12px"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demostración" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-20 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-left">Los resultados son⚡</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <p class="italic">“Al tercer día ya tenía mi primera venta.”</p>
+          <span class="block mt-4 text-sm text-gray-400">– Juan P.</span>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <p class="italic">“Con un solo VSL entendí cómo cerrar.”</p>
+          <span class="block mt-4 text-sm text-gray-400">– María G.</span>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <p class="italic">“Pegué el HTML y en horas llegaron DMs.”</p>
+          <span class="block mt-4 text-sm text-gray-400">– Carlos T.</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- BENEFICIOS -->
-    <section class="section wrap" id="beneficios" style="padding-top:20px">
-      <h2 style="font-size:28px;margin-bottom:14px">Beneficios concretos</h2>
-      <div class="beneficios-grid">
-        <div class="beneficio"><span class="icon">⚡</span><div><h3>Instalación express</h3><p>Pega el HTML, cambia textos y enlaces. Listo en minutos.</p></div></div>
-        <div class="beneficio"><span class="icon">🎯</span><div><h3>Guion que cierra</h3><p>VSL X5 con ángulos de persuasión para el nicho del dinero.</p></div></div>
-        <div class="beneficio"><span class="icon">🤖</span><div><h3>IA que redacta por ti</h3><p>Prompts 3×3 para titulares, bullets, objeciones y CTA.</p></div></div>
-        <div class="beneficio"><span class="icon">🚀</span><div><h3>Avance rápido</h3><p>Checklist de 14 días que acelera tu primera venta digital.</p></div></div>
+  <!-- Oferta Final -->
+  <section id="oferta-final" class="py-20 bg-gradient-to-b from-gray-900 to-black text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-white">🔥 Oferta Final</h2>
+      <p class="text-lg mb-10 text-gray-300">Accede hoy al paquete completo con todo lo que necesitas para tu primera venta digital.</p>
+      
+      <!-- Imagen nueva -->
+      <div class="flex justify-center mb-8">
+        <img src="metodo_ia_3x3_recortado.png" alt="Método IA 3x3 Oferta Final" class="max-w-lg mx-auto">
       </div>
-    </section>
 
-    <!-- TESTIMONIOS -->
-    <section class="section wrap" id="testi">
-      <h2>Los resultados son ⚡</h2>
-      <div class="testi-grid">
-        <div class="testi">“Al tercer día ya tenía mi primera venta.”<small>- Juan M.</small></div>
-        <div class="testi">“Con un solo VSL entendí cómo cerrar.”<small>- Laura G.</small></div>
-        <div class="testi">“Pegué el HTML y en horas llegaron DMs.”<small>- Carlos P.</small></div>
+      <div class="bg-gray-800 text-white p-8 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Resumen de lo que vas a recibir:</h3>
+        <ul class="text-left list-disc list-inside space-y-2 mb-6 text-gray-300">
+          <li>Embudo de 1 página listo para usar</li>
+          <li>5 guiones VSL probados y optimizados</li>
+          <li>Prompts IA 3×3 para crear contenido rápido</li>
+          <li>Plan de 14 días paso a paso</li>
+          <li>Acceso inmediato + actualizaciones gratis</li>
+        </ul>
+
+        <p class="text-xl mb-2 line-through text-gray-400">$49</p>
+        <p class="text-4xl font-bold text-yellow-400 mb-6">$5</p>
+
+        <a href="#comprar" class="bg-gradient-to-r from-orange-500 to-pink-600 hover:opacity-90 text-white font-bold py-4 px-10 rounded-xl shadow-lg transition transform hover:scale-105 inline-block">
+          Sí, quiero acceder por $5
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- OFERTA FINAL -->
-    <section class="section wrap offer" id="comprar">
-      <img src="https://via.placeholder.com/280x180.png?text=Pack+Digital" alt="Pack digital" />
-      <h2>Resumen de todo lo que vas a recibir</h2>
-      <ul>
-        <li>1 Página de venta lista para usar</li>
-        <li>5 Guiones VSL optimizados</li>
-        <li>Prompts IA 3×3 para cerrar más fácil</li>
-        <li>Checklist de 14 días paso a paso</li>
-        <li>Acceso inmediato y soporte básico</li>
-      </ul>
-      <div class="price">$5 USD</div>
-      <a href="#" class="btn btn-cta">¡Sí! Quiero unirme ahora por $5</a>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section wrap" id="faq">
-      <h2>Preguntas frecuentes</h2>
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-black">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-10 text-center">❓ Preguntas Frecuentes</h2>
       <div class="faq-item">
-        <h3>¿Necesito experiencia previa?</h3>
-        <p>No, todo está diseñado para que incluso un principiante pueda implementar el sistema.</p>
+        <h3 class="font-semibold">¿Cuánto tiempo tardaré en ver resultados?</h3>
+        <p class="text-gray-400">Depende de tu implementación, pero el plan está diseñado para que veas tu primera venta en 14 días.</p>
       </div>
       <div class="faq-item">
-        <h3>¿Debo invertir en anuncios?</h3>
-        <p>No. La estrategia está enfocada en tráfico orgánico y métodos gratuitos.</p>
+        <h3 class="font-semibold">¿Necesito experiencia previa?</h3>
+        <p class="text-gray-400">No, el método es paso a paso y pensado para principiantes.</p>
       </div>
       <div class="faq-item">
-        <h3>¿Cuánto tiempo necesito al día?</h3>
-        <p>Entre 1 y 2 horas diarias es suficiente para seguir el plan de 14 días.</p>
+        <h3 class="font-semibold">¿Tengo acceso inmediato?</h3>
+        <p class="text-gray-400">Sí, al hacer el pago recibes acceso instantáneo a todo el material.</p>
       </div>
-      <div class="faq-item">
-        <h3>¿Qué pasa si no me funciona?</h3>
-        <p>Si aplicas los pasos tal como están, verás resultados. El sistema fue probado y optimizado.</p>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="py-6 bg-black text-center text-gray-500">
+    © 2025 Método IA 3×3 · Todos los derechos reservados
+  </footer>
+
+  <!-- Countdown Script -->
   <script>
-    // Urgency countdown (48h desde primera visita)
-    (function(){
-      const KEY='lp_cd_deadline';
-      const now=Date.now();
-      let deadline=localStorage.getItem(KEY);
-      if(!deadline){ deadline=now + 48*60*60*1000; localStorage.setItem(KEY, deadline); }
-      else{ deadline=+deadline; }
-      function tick(){
-        const d=document.getElementById('cd-days');
-        const h=document.getElementById('cd-hours');
-        const m=document.getElementById('cd-mins');
-        const s=document.getElementById('cd-secs');
-        const t=deadline - Date.now();
-        if(t<=0){d.textContent=h.textContent=m.textContent=s.textContent='0';return;}
-        const secs=Math.floor(t/1000);
-        d.textContent=Math.floor(secs/86400);
-        h.textContent=Math.floor((secs%86400)/3600);
-        m.textContent=Math.floor((secs%3600)/60);
-        s.textContent=secs%60;
-        requestAnimationFrame(tick);
-      }
-      tick();
-    })();
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 1);
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = endDate - now;
+
+      if (diff <= 0) return;
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").innerText = d + "d";
+      document.getElementById("hours").innerText = h + "h";
+      document.getElementById("minutes").innerText = m + "m";
+      document.getElementById("seconds").innerText = s + "s";
+    }
+
+    setInterval(updateCountdown, 1000);
   </script>
+
 </body>
 </html>
